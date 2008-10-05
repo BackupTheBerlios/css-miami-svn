@@ -1,0 +1,3 @@
+FORMS        = CSSMiami.ui editor.ui editor_image.ui dialogs.ui
+SOURCES      = CSSMiami.py editor.py editor_image.py dialogs.py
+TRANSLATIONS = tr/es.ts tr/ca.ts tr/en.ts

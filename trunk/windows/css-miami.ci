@@ -1,0 +1,90 @@
+<*project
+      version = 4 civer = "Free v4.14.3" winver = "2.6/5.1.2600" > 
+   <output> c:\setups</>
+   <exename> css-miami.exe</>
+   <digitsign> </>
+   <appname> CSS-Miami</>
+   <password> </>
+   <addlang> </>
+   <icon> Default - 1</>
+   <selfextr> 1</>
+   <voltype> nolimit</>
+   <volsize> </>
+   <volpattern> disk%i.pak</>
+   <load> </>
+   <loadtime> 1000</>
+   <checktype> admin</>
+   <chkname> </>
+   <chkmsg> </>
+   <dlgfont> Verdana,8</>
+   <lang> english</>
+   <theme> Disk</>
+   <iface> </>
+   <leftlogo> </>
+   <logo> </>
+   <vb> </>
+   <dao> </>
+   <background> 0</>
+   <dlgwelcome> 1</>
+   <dlgreadme> </>
+   <dlglic> </>
+   <dlgcustpath> c:\Archivos de Programa\CSS-Miami</>
+   <dlgenfpath> 1</>
+   <dlgsavepath> 1</>
+   <dlgautoprog> 1</>
+   <dlgfinish> 1</>
+   <comptype> defnorm</>
+   <solid> 0</>
+   <srcfolder> Z:\css-miami\dist</>
+   <ifexist> overnewer</>
+   <runafter> CSSMiami.exe</>
+   <runconfirm> 1</>
+   <uninclude> 1</>
+   <unicon> Uninstall</>
+   <unshortcut> 1</>
+   <unrun> </>
+   <silent> 0</>
+   <unfeed> </>
+   <unautoclose> 0</>
+   <unfinish> 0</>
+   <bl> </>
+   <blurl> </>
+   <bghead> </>
+   <bgfoot> </> 
+   <bgback> </>
+   <files listview >
+      <_><src>Z:\css-miami\dist\docs</><dest>inst</><custom></><ifexist>overnewer</><recurs>0</></>
+<_><src>Z:\css-miami\dist\images</><dest>inst</><custom></><ifexist>overnewer</><recurs>0</></>
+<_><src>Z:\css-miami\dist\tr</><dest>inst</><custom></><ifexist>overnewer</><recurs>0</></>
+
+   </files>
+   <runx listview >
+      
+   </runx>
+   <registry listview >
+      
+   </registry>
+   <shcut listview >
+      <_><shpath>comprog</><shname>CSS-Miami</><tarpath>inst</><tarname>CSSMiami.exe</><cmdline></><workpath>inst</><workcust></><icon></></>
+
+   </shcut>
+   <ini listview >
+      
+   </ini>
+   <copy listview >
+      
+   </copy>
+   <activex listview >
+      
+   </activex>
+   <font listview >
+      
+   </font>
+   <ext listview >
+      
+   </ext>
+   <mreg listview >
+      
+   </mreg>
+   <macros> </>
+</project>

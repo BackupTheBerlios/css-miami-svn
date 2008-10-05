@@ -1,0 +1,215 @@
+----------- Per Presentar -------------------------
+
+Treure TODO,  *.pyc,   *~,   prepare.sh, css, img, html, *.project, .svn, *.svg
+
+remove  __init__.py
+no ESC allowed on open dialog (at start)
+
+make api
+
+---------------------------------------------------
+
+
+-----------  NEXT RELEASE  ------------------------
+centrat del body en l'espai disponible
+
+Todo més tard: (que es pot anar fent)
+   background image & editors compatible
+
+toolbox en una table?
+
+posar equip kdemar al splash amb link a k-demar,org, ekipo.hmtl
+
+editor més complet (forms/joomla/
+
+css-miami (diferents paddings  left,right,top,bottom -> en cb )
+
+editor - imatges online possible
+
+editor:
+  -ul/li
+  -que es pugui re-editar osea els links imatges i tables, que es puguin tornar a obrir, no solament crear
+  -wysiwyg amb el findText
+  -permetre d'n'd de documents amb el seu format! (acceptRichtext)
+
+fer-ho més wysiwig
+  TOT que sigui en codi HTML. (css integrat en el workspace)
+que les imatges es vegin en el workspace
+
+que el resize no s'en vagi a pendre pel sac a la que toca els borders
+
+implementar undo
+
+codi amb resaltat de colors
+
+borders + galeria de bordes en els divs. escull tamany de divs de borde, escull quins bordes, escull imatges/galeria i ZAS! en todo el div
+
+---------------------------------------------------
+
+### FET Possibilitat de canviar de traduccio (adonay)
+
+### FET juntar tots els dialogs en 1 i solament fer EMITS diferents
+
+### FET more key shorcuts
+
+### FET put key showcuts on editor tips (GUI)
+
+### FET use tips en la UI
+
+### FET al posar no color fons. treure color buto
+
+### FET crear directori css
+
+### SI QUE HI ES diria que la opacity  (self.sb_opacity)  no la posa pq no hi ha referencia en el codi
+
+### FET scrollarea a posicio i tamany (toolbox)
+
+### FET divs creats amb borde 1 tots menys el 0 (body)) pq es vegi
+
+### FET borrar divs
+
+### FET no poder posar noms iguals a dos divs
+
+### FET dialeg de confirmacio de sortir
+
+### FET dialeg confirmació d'esborrar borra div
+
+### FET titol nom de la finestra obrir
+
+### FET edició avançada de meta tag
+
+### FET: resizeable (grid?)
+
+### FET: tamany de la mainwindow
+
+### FET: quan no hi ha div que no faci res, que no surti el warning que surt
+
+### FET: previsualitza -> desa a /tmp  o  %TMPDIR% -> qwebview .setHTML (fet en kdemarstart)
+
+### FET: fer finestra per escollir navegador i veure la plana que s'esta dissenyant
+
+### FET: edició de contingut en HTML
+
+### FET: textEdit amb el codi HTML ja fet (sense text pla)
+
+### FET: tema de desar HTML (que pregunti la ruta, o no, o com¿?)
+
+### FET: Visualitza navegador extern -> dialeg de sel·lecció de navegadors per veure HTML creat
+
+### FET: emplenar la llista de troggles per desablear al editor
+
+### FET: toglear el boto de edicio avanzada
+
+### FET: apretador a panel opcions text
+
+### FET: editor hr
+
+### FET: avisos: quan s'obre web o nova SESBORRRRAAARRA
+
+### FET open dialog de obrir o nou a l'inici
+
+### FET si es vol previsualitzar, comprovar i dir, que s'ha desat una vegada
+
+### FET posat fet per nosatres 2
+
+### FET icona de  HR
+
+### FET si bg color al div, posar-lo al editor pq es vegi en "su salsa"
+
+### FET editor -> translate  à è é -> &eacute;   -   amb la llista de llistes [ ( "à" ,  "&acute;" ), ( "è", "&egrave") ]
+
+### FET test de diferents noms de CSS template
+
+### FET poder llegir del antic css-miami (majuscules en la header, buscar css en tot el document i poder llegir preus.html)
+
+### FET editor: links i tables i imatges
+
+### FET canviar title pag web
+
+### FET treure globals ->   self.
+
+### FET posar icone que marqui quin div es l'actiu
+
+### FET que la icona que marca el div estigui sempre a sobre i segueixi al div
+
+### FET visiblitat fet amb un chbox
+
+### FET unitats ->  de que??  # em o px  posar unitats de padding
+
+### FET icona de css cuadrada
+
+### FET css-miami 1.0 -> 2.0
+
+### FET treure tots els setgeometry, trets els que es poden treure
+
+### FET no poguer renombrar div en blanc
+
+### FET ch de limits -> desactiva els spinbox
+
+### FET ch repeat imatge desconecta repeat
+
+### FET header/footer avançat
+### FET        titols de què modifiques a cada text edit
+### FET        en el header no el <body> cambiar no peu, header sense /header, automatic body
+
+### FET que no falli si no troba tags header / css definitions
+
+### FET qsplashscreen
+
+### FET editText drag&drop
+
+### FET passar table a dialogs  # adonay
+
+### FET about -> qt4 technology & python
+
+### avis de no es pot carregar si no troba el css i que creara una plantilla.css
+
+### icones en els dialegs
+
+### FET cb  opcions repeated???
+
+### FET layers sempre a 0 cuan up raise per ordre
+
+### FET self.tr("This Div's name exists: "+nom+ "\n\nType another name please"), QMessageBox.Ok)
+
+### FET no poder cancelar la primera vegada el obrir # adonay
+
+### FET splash, acabar-lo
+
+### FET Al cancelar color fons queda negre
+
+### FET enlloc de combobox sigui no color fons, que sigui color fons
+
+### FET fer-ho wiswig, guardar en variable content del divs el texte pla però posar source html als divs
+
+### FET portat a windows: FET QUASI TOT, funciona en general però no funciona el previsualitzar
+
+### FET Traduccions
+
+### FET treure funcions preview
+
+### FET fer que per defecte estigui en html, no codi
+
+### FET passar variables divs a dins classe
+
+### FET que tingui en compte la font family
+
+### FET que no posi 'pt' en el tamany de lletra
+
+### FET arreglar borra div
+
+### FET screenshots nous pas a pas
+
+### FET amagar opcions no necesaries quan selecciones body
+
+### FET mes tipus de lletra en: http://donestandares.wordpress.com/
+
+### FET que el body no pugui canviar de layer => el cb_layer que desapareixi si es el body
+
+### FET que el browse image estigui desaparegut ja d'entrada
+
+### FET BASTANT FET revisar codi, treure guarradetes, comentar-lo  (
+
+### FET manual (adonay. podeu aportar idees)
+
+### FET permetre divs a posicio 0,0

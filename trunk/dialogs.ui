@@ -1,0 +1,1190 @@
+<ui version="4.0" >
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog" >
+  <property name="windowModality" >
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>408</width>
+    <height>390</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Dialog</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset>
+    <normaloff>images/css.png</normaloff>images/css.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" >
+   <item row="1" column="0" >
+    <layout class="QHBoxLayout" name="horizontalLayout" >
+     <item>
+      <spacer name="horizontalSpacer" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="b_ok" >
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="toolTip" >
+        <string>Accept</string>
+       </property>
+       <property name="text" >
+        <string>Ok</string>
+       </property>
+       <property name="icon" >
+        <iconset>
+         <normaloff>images/ok.png</normaloff>images/ok.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="b_cancel" >
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="toolTip" >
+        <string>Cancel</string>
+       </property>
+       <property name="text" >
+        <string>Cancel</string>
+       </property>
+       <property name="icon" >
+        <iconset>
+         <normaloff>images/cancel.png</normaloff>images/cancel.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0" >
+    <widget class="QStackedWidget" name="pages" >
+     <property name="currentIndex" >
+      <number>3</number>
+     </property>
+     <widget class="QWidget" name="page_about" >
+      <property name="geometry" >
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>400</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <widget class="QLabel" name="about_l_about" >
+       <property name="geometry" >
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>402</width>
+         <height>234</height>
+        </rect>
+       </property>
+       <property name="pixmap" >
+        <pixmap>images/splash_css.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="about_te_author" >
+       <property name="geometry" >
+        <rect>
+         <x>0</x>
+         <y>240</y>
+         <width>401</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="palette" >
+        <palette>
+         <active>
+          <colorrole role="Mid" >
+           <brush brushstyle="SolidPattern" >
+            <color alpha="255" >
+             <red>192</red>
+             <green>200</green>
+             <blue>208</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Base" >
+           <brush brushstyle="SolidPattern" >
+            <color alpha="255" >
+             <red>231</red>
+             <green>232</green>
+             <blue>231</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </active>
+         <inactive>
+          <colorrole role="Mid" >
+           <brush brushstyle="SolidPattern" >
+            <color alpha="255" >
+             <red>192</red>
+             <green>200</green>
+             <blue>208</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Base" >
+           <brush brushstyle="SolidPattern" >
+            <color alpha="255" >
+             <red>231</red>
+             <green>232</green>
+             <blue>231</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </inactive>
+         <disabled>
+          <colorrole role="Mid" >
+           <brush brushstyle="SolidPattern" >
+            <color alpha="255" >
+             <red>192</red>
+             <green>200</green>
+             <blue>208</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Base" >
+           <brush brushstyle="SolidPattern" >
+            <color alpha="255" >
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </disabled>
+        </palette>
+       </property>
+       <property name="autoFillBackground" >
+        <bool>false</bool>
+       </property>
+       <property name="frameShape" >
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="lineWidth" >
+        <number>0</number>
+       </property>
+       <property name="html" >
+        <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'DejaVu Sans'; font-size:11pt; font-weight:400; font-style:normal;">
+&lt;p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:9pt;">&lt;span style=" font-size:12pt;">Generador de pàgines web amb CSS&lt;/span>&lt;/p>
+&lt;p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:12pt;">Josep Gimbernat i Adonay Sanz  -  copyright 2008&lt;/p>
+&lt;p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:12pt;">&lt;a href="www.k-demar.org">&lt;span style=" text-decoration: underline; color:#0000ff;">www.k-demar.org&lt;/span>&lt;/a>  - sota llicència GPL v3&lt;/p>
+&lt;p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:12pt;">Utilitzant Tecnologia  Python &amp;amp; QT 4&lt;/p>&lt;/body>&lt;/html></string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_new" >
+      <property name="geometry" >
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>400</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <widget class="QPushButton" name="new_b_open" >
+       <property name="windowModality" >
+        <enum>Qt::NonModal</enum>
+       </property>
+       <property name="geometry" >
+        <rect>
+         <x>30</x>
+         <y>10</y>
+         <width>141</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="toolTip" >
+        <string>Open Webpage</string>
+       </property>
+       <property name="text" >
+        <string>Obrir Web</string>
+       </property>
+       <property name="icon" >
+        <iconset>
+         <normaloff>images/abrir.png</normaloff>images/abrir.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="new_b_new" >
+       <property name="windowModality" >
+        <enum>Qt::NonModal</enum>
+       </property>
+       <property name="geometry" >
+        <rect>
+         <x>190</x>
+         <y>10</y>
+         <width>181</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="toolTip" >
+        <string>Create new webpage</string>
+       </property>
+       <property name="text" >
+        <string>Crear nova Web</string>
+       </property>
+       <property name="icon" >
+        <iconset>
+         <normaloff>images/nou.png</normaloff>images/nou.png</iconset>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="new_le_title" >
+       <property name="geometry" >
+        <rect>
+         <x>30</x>
+         <y>80</y>
+         <width>351</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="toolTip" >
+        <string>Webpage Title (Optional)</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="new_le_folder" >
+       <property name="geometry" >
+        <rect>
+         <x>30</x>
+         <y>140</y>
+         <width>301</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="toolTip" >
+        <string>Browse for a folder to save the webpage</string>
+       </property>
+       <property name="readOnly" >
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="new_le_css" >
+       <property name="geometry" >
+        <rect>
+         <x>200</x>
+         <y>200</y>
+         <width>141</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="toolTip" >
+        <string>Modify CSS template filename</string>
+       </property>
+       <property name="text" >
+        <string>plantilla.css</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="new_b_browse" >
+       <property name="geometry" >
+        <rect>
+         <x>340</x>
+         <y>138</y>
+         <width>41</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="toolTip" >
+        <string>Browse for a directory</string>
+       </property>
+       <property name="text" >
+        <string/>
+       </property>
+       <property name="icon" >
+        <iconset>
+         <normaloff>images/abrir.png</normaloff>images/abrir.png</iconset>
+       </property>
+      </widget>
+      <widget class="QLabel" name="new_l_favicon" >
+       <property name="geometry" >
+        <rect>
+         <x>30</x>
+         <y>250</y>
+         <width>151</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text" >
+        <string>Icon :  favicon.ico</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="new_l_csstemplate" >
+       <property name="geometry" >
+        <rect>
+         <x>200</x>
+         <y>178</y>
+         <width>191</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text" >
+        <string>Nom plantilla css a crear</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="new_le_html" >
+       <property name="geometry" >
+        <rect>
+         <x>30</x>
+         <y>200</y>
+         <width>141</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="toolTip" >
+        <string>Modify HTML filename</string>
+       </property>
+       <property name="text" >
+        <string>index.html</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="new_l_imgfolder" >
+       <property name="geometry" >
+        <rect>
+         <x>200</x>
+         <y>240</y>
+         <width>181</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text" >
+        <string>Directori Imagtes : /img</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="new_l_cssfolder" >
+       <property name="geometry" >
+        <rect>
+         <x>200</x>
+         <y>260</y>
+         <width>171</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text" >
+        <string>Directori Css : /css</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="new_l_title" >
+       <property name="geometry" >
+        <rect>
+         <x>30</x>
+         <y>60</y>
+         <width>331</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text" >
+        <string>Nom (Títol) de la web que es vol crear</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="new_l_htmlfile" >
+       <property name="geometry" >
+        <rect>
+         <x>30</x>
+         <y>178</y>
+         <width>161</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text" >
+        <string>Nom del fitxer a crear</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="new_l_path" >
+       <property name="geometry" >
+        <rect>
+         <x>30</x>
+         <y>118</y>
+         <width>321</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text" >
+        <string>Directori on es guardaran els fitxers</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_browsers" >
+      <property name="geometry" >
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>400</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <widget class="QComboBox" name="nav_cb_nav" >
+       <property name="geometry" >
+        <rect>
+         <x>200</x>
+         <y>75</y>
+         <width>171</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="toolTip" >
+        <string>Select external browse to preview the webpage</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="nav_l_title" >
+       <property name="geometry" >
+        <rect>
+         <x>80</x>
+         <y>20</y>
+         <width>311</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="layoutDirection" >
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text" >
+        <string>Visualización de la página web diseñada</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="nav_l_select_nav" >
+       <property name="geometry" >
+        <rect>
+         <x>0</x>
+         <y>80</y>
+         <width>241</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text" >
+        <string>Seleccione el Navegador deseado</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_open" >
+      <property name="geometry" >
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>400</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <widget class="QPushButton" name="open_b_browse" >
+       <property name="geometry" >
+        <rect>
+         <x>350</x>
+         <y>110</y>
+         <width>30</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="toolTip" >
+        <string>Browse for a webpage to open</string>
+       </property>
+       <property name="text" >
+        <string/>
+       </property>
+       <property name="icon" >
+        <iconset>
+         <normaloff>images/abrir.png</normaloff>images/abrir.png</iconset>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="open_le_path" >
+       <property name="geometry" >
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>329</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="toolTip" >
+        <string>Path to webpage to open</string>
+       </property>
+       <property name="readOnly" >
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="open_l_filename" >
+       <property name="geometry" >
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>321</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text" >
+        <string>Nom del fitxer que es vol obrir</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="open_b_open" >
+       <property name="windowModality" >
+        <enum>Qt::NonModal</enum>
+       </property>
+       <property name="geometry" >
+        <rect>
+         <x>30</x>
+         <y>10</y>
+         <width>141</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="toolTip" >
+        <string>Open Webpage</string>
+       </property>
+       <property name="text" >
+        <string>Obrir Web</string>
+       </property>
+       <property name="icon" >
+        <iconset>
+         <normaloff>images/abrir.png</normaloff>images/abrir.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="open_b_new" >
+       <property name="windowModality" >
+        <enum>Qt::NonModal</enum>
+       </property>
+       <property name="geometry" >
+        <rect>
+         <x>190</x>
+         <y>10</y>
+         <width>181</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="toolTip" >
+        <string>Create new webpage</string>
+       </property>
+       <property name="text" >
+        <string>Crear nova Web</string>
+       </property>
+       <property name="icon" >
+        <iconset>
+         <normaloff>images/nou.png</normaloff>images/nou.png</iconset>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_link" >
+      <property name="geometry" >
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>392</width>
+        <height>144</height>
+       </rect>
+      </property>
+      <widget class="QLineEdit" name="link_le_url" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>351</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="toolTip" >
+        <string>Enter URL where link</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="link_le_text" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>351</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="toolTip" >
+        <string>Enter descriptive text to appear on webpage</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="link_l_text" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>70</y>
+         <width>311</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text" >
+        <string>Texto que quiere que aparezca</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="link_l_url" >
+       <property name="geometry" >
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>321</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text" >
+        <string>Introduzca la dirección Web (URL)</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_tables" >
+      <property name="geometry" >
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>392</width>
+        <height>144</height>
+       </rect>
+      </property>
+      <widget class="QLabel" name="table_l_row" >
+       <property name="geometry" >
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>103</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text" >
+        <string>Filas</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="table_sb_col" >
+       <property name="geometry" >
+        <rect>
+         <x>119</x>
+         <y>40</y>
+         <width>46</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="minimum" >
+        <number>1</number>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="table_sb_row" >
+       <property name="geometry" >
+        <rect>
+         <x>120</x>
+         <y>7</y>
+         <width>46</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="minimum" >
+        <number>1</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="table_l_vert" >
+       <property name="geometry" >
+        <rect>
+         <x>273</x>
+         <y>109</y>
+         <width>86</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text" >
+        <string>Verticalmente</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="table_sb_border" >
+       <property name="geometry" >
+        <rect>
+         <x>370</x>
+         <y>38</y>
+         <width>73</width>
+         <height>24</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="table_l_horiz" >
+       <property name="geometry" >
+        <rect>
+         <x>10</x>
+         <y>109</y>
+         <width>103</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text" >
+        <string>Horizontalmente</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="table_sb_space" >
+       <property name="geometry" >
+        <rect>
+         <x>172</x>
+         <y>147</y>
+         <width>88</width>
+         <height>24</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="table_l_space" >
+       <property name="geometry" >
+        <rect>
+         <x>10</x>
+         <y>150</y>
+         <width>155</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text" >
+        <string>Espacio entre Celdas</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="table_l_width" >
+       <property name="geometry" >
+        <rect>
+         <x>267</x>
+         <y>10</y>
+         <width>98</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text" >
+        <string>Anchura en %</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="table_sb_padding" >
+       <property name="geometry" >
+        <rect>
+         <x>372</x>
+         <y>147</y>
+         <width>73</width>
+         <height>24</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="table_l_align" >
+       <property name="geometry" >
+        <rect>
+         <x>110</x>
+         <y>80</y>
+         <width>326</width>
+         <height>33</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text" >
+        <string>Alineamiento del texto en las celdas </string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="table_cb_vert" >
+       <property name="geometry" >
+        <rect>
+         <x>372</x>
+         <y>110</y>
+         <width>73</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <item>
+        <property name="text" >
+         <string>Arriba</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>Centro</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>Abajo</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QSpinBox" name="table_sb_width" >
+       <property name="geometry" >
+        <rect>
+         <x>372</x>
+         <y>5</y>
+         <width>73</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="minimum" >
+        <number>5</number>
+       </property>
+       <property name="maximum" >
+        <number>100</number>
+       </property>
+       <property name="singleStep" >
+        <number>5</number>
+       </property>
+       <property name="value" >
+        <number>100</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="table_l_padding" >
+       <property name="geometry" >
+        <rect>
+         <x>273</x>
+         <y>150</y>
+         <width>86</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text" >
+        <string>Padding</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="table_l_border" >
+       <property name="geometry" >
+        <rect>
+         <x>273</x>
+         <y>44</y>
+         <width>86</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text" >
+        <string>Borde</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="table_cb_hor" >
+       <property name="geometry" >
+        <rect>
+         <x>172</x>
+         <y>109</y>
+         <width>88</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <item>
+        <property name="text" >
+         <string>Izquierda</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>Centro</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>Derecha</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="table_l_col" >
+       <property name="geometry" >
+        <rect>
+         <x>10</x>
+         <y>44</y>
+         <width>103</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font" >
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text" >
+        <string>Columnas</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_language" >
+      <property name="geometry" >
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>392</width>
+        <height>144</height>
+       </rect>
+      </property>
+      <widget class="QLabel" name="label_21" >
+       <property name="geometry" >
+        <rect>
+         <x>150</x>
+         <y>30</y>
+         <width>201</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>Choose new language</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="lang_b_esp" >
+       <property name="geometry" >
+        <rect>
+         <x>160</x>
+         <y>90</y>
+         <width>111</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>Castellano</string>
+       </property>
+       <property name="icon" >
+        <iconset>
+         <normaloff>images/spain.png</normaloff>images/spain.png</iconset>
+       </property>
+       <property name="iconSize" >
+        <size>
+         <width>48</width>
+         <height>48</height>
+        </size>
+       </property>
+       <property name="checkable" >
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="lang_b_cat" >
+       <property name="geometry" >
+        <rect>
+         <x>30</x>
+         <y>90</y>
+         <width>111</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>Català</string>
+       </property>
+       <property name="icon" >
+        <iconset>
+         <normaloff>images/catalan.png</normaloff>images/catalan.png</iconset>
+       </property>
+       <property name="iconSize" >
+        <size>
+         <width>48</width>
+         <height>48</height>
+        </size>
+       </property>
+       <property name="checkable" >
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="lang_b_eng" >
+       <property name="geometry" >
+        <rect>
+         <x>290</x>
+         <y>90</y>
+         <width>111</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text" >
+        <string>English</string>
+       </property>
+       <property name="icon" >
+        <iconset>
+         <normaloff>images/uk.png</normaloff>images/uk.png</iconset>
+       </property>
+       <property name="iconSize" >
+        <size>
+         <width>48</width>
+         <height>48</height>
+        </size>
+       </property>
+       <property name="checkable" >
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>b_cancel</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>371</x>
+     <y>318</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>209</x>
+     <y>171</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

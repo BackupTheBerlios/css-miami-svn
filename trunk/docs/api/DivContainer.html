@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html><head>
+<title>DivContainer</title>
+<style>
+body {
+    background:white;
+    margin: 0em 1em 10em 1em;
+    color: black;
+}
+
+h1 { color: white; background: #4FA4FF; }
+h2 { color: white; background: #4FA4FF; }
+h3 { color: white; background: #00557F; }
+h4 { color: white; background: #00557F; }
+    
+a { color: #AA5500; }
+
+</style>
+</head>
+<body><a NAME="top" ID="top"></a>
+<h1>DivContainer</h1>
+
+<h3>Classes</h3>
+<table>
+<tr>
+<td><a href="#DivContainer">DivContainer</a></td>
+<td>class to define a new text edit with draggable capacities and new properties <br> @signal add_div This signal is emited when "Add div" is clicked on context menu <br><br> variables --> css property<br> ----------     -------------<br> self.top -->  top<br> self.left -->  left<br> self.width -->  width<br> self.height -->  height<br> self.bgcolor --> background-color<br> self.repeat -->  background-repeat<br> self.no_image -->  noimage<br> self.image_url --> background-image<br> #self.padding -->  padding<br> self.padding_units --> em / px<br> self.border_style -->   border-style<br> self.border_width -->   border-width<br> self.border_color -->   border-color<br> self.vertical_align --> vertical-align<br> self.opacity -->  opacity<br> self.z_index -->  z-index<br> self.position -->  position<br> self.visibility -->     visibility<br> self.font_family -->    font-family<br> self.font_style -->     font-style<br> self.font_weight -->    font-weight<br> self.font_size -->  font-size<br> self.text_align -->     text-align<br> self.nomclase -->  DIV name<br> self.overflow --> overflow<br> self.content -->  DIV content (html)<br> self.text_color -->     color<br> self.color_transparent --> color-transparent<br> self.no_width --> width limit<br> self.no_height --> height limit<br></td>
+</tr>
+</table>
+<h3>Functions</h3>
+<table>
+<tr><td>None</td></tr>
+</table>
+<hr /><hr />
+<a NAME="DivContainer" ID="DivContainer"></a>
+<h2>DivContainer</h2>
+<p>
+    class to define a new text edit with draggable capacities and new properties
+    <br>
+</p><h4>Signals</h4>
+<dl>
+<dt>add_div</dt>
+<dd>
+This signal is emited when "Add div" is clicked on context menu
+    <br><br>
+    variables --> css property<br>
+    ----------     -------------<br>
+    self.top -->  top<br>
+    self.left -->  left<br>
+    self.width -->  width<br>
+    self.height -->  height<br>
+    self.bgcolor --> background-color<br>
+    self.repeat -->  background-repeat<br>
+    self.no_image -->  noimage<br>
+    self.image_url --> background-image<br>
+    #self.padding -->  padding<br>
+    self.padding_units --> em / px<br>
+    self.border_style -->   border-style<br>
+    self.border_width -->   border-width<br>
+    self.border_color -->   border-color<br>
+    self.vertical_align --> vertical-align<br>
+    self.opacity -->  opacity<br>
+    self.z_index -->  z-index<br>
+    self.position -->  position<br>
+    self.visibility -->     visibility<br>
+    self.font_family -->    font-family<br>
+    self.font_style -->     font-style<br>
+    self.font_weight -->    font-weight<br>
+    self.font_size -->  font-size<br>
+    self.text_align -->     text-align<br>
+    self.nomclase -->  DIV name<br>
+    self.overflow --> overflow<br>
+    self.content -->  DIV content (html)<br>
+    self.text_color -->     color<br>
+    self.color_transparent --> color-transparent<br>
+    self.no_width --> width limit<br>
+    self.no_height --> height limit<br>
+</dd>
+</dl>
+<h3>Derived from</h3>
+QTextEdit
+<h3>Methods</h3>
+<table>
+<tr>
+<td><a href="#DivContainer.__init__">DivContainer</a></td>
+<td></td>
+</tr><tr>
+<td><a href="#DivContainer.add_div">add_div</a></td>
+<td>emit signal add div</td>
+</tr><tr>
+<td><a href="#DivContainer.del_div">del_div</a></td>
+<td>emit signal to delete div</td>
+</tr><tr>
+<td><a href="#DivContainer.edit_div">edit_div</a></td>
+<td>emit signal double cliked mouse</td>
+</tr><tr>
+<td><a href="#DivContainer.mouseDoubleClickEvent">mouseDoubleClickEvent</a></td>
+<td>Double clicked Event When you double click the DivContainer, 'div_dbl_clicked' SIGNAL is emited</td>
+</tr><tr>
+<td><a href="#DivContainer.mouseMoveEvent">mouseMoveEvent</a></td>
+<td>implements drag and drop</td>
+</tr><tr>
+<td><a href="#DivContainer.mousePressEvent">mousePressEvent</a></td>
+<td>Clicked Event When you click the DivContainer, 'div_clicked' SIGNAL is emited</td>
+</tr><tr>
+<td><a href="#DivContainer.toggle_view">toggle_view</a></td>
+<td>emit signal toggle view source code/html</td>
+</tr>
+</table>
+<p><a NAME="DivContainer.__init__" ID="DivContainer.__init__"></a>
+<h4>DivContainer (Constructor)</h4>
+<b>DivContainer</b>(<i>parent, tipus="div"</i>)
+<a NAME="DivContainer.add_div" ID="DivContainer.add_div"></a>
+<h4>DivContainer.add_div</h4>
+<b>add_div</b>(<i></i>)
+<p>
+        emit signal add div
+</p><a NAME="DivContainer.del_div" ID="DivContainer.del_div"></a>
+<h4>DivContainer.del_div</h4>
+<b>del_div</b>(<i></i>)
+<p>
+        emit signal to delete div
+</p><a NAME="DivContainer.edit_div" ID="DivContainer.edit_div"></a>
+<h4>DivContainer.edit_div</h4>
+<b>edit_div</b>(<i></i>)
+<p>
+        emit signal double cliked mouse
+</p><a NAME="DivContainer.mouseDoubleClickEvent" ID="DivContainer.mouseDoubleClickEvent"></a>
+<h4>DivContainer.mouseDoubleClickEvent</h4>
+<b>mouseDoubleClickEvent</b>(<i>event</i>)
+<p>
+        Double clicked Event
+        When you double click the DivContainer, 'div_dbl_clicked' SIGNAL is emited
+</p><a NAME="DivContainer.mouseMoveEvent" ID="DivContainer.mouseMoveEvent"></a>
+<h4>DivContainer.mouseMoveEvent</h4>
+<b>mouseMoveEvent</b>(<i>event</i>)
+<p>
+        implements drag and drop
+</p><a NAME="DivContainer.mousePressEvent" ID="DivContainer.mousePressEvent"></a>
+<h4>DivContainer.mousePressEvent</h4>
+<b>mousePressEvent</b>(<i>event</i>)
+<p>
+        Clicked Event
+        When you click the DivContainer, 'div_clicked' SIGNAL is emited
+</p><a NAME="DivContainer.toggle_view" ID="DivContainer.toggle_view"></a>
+<h4>DivContainer.toggle_view</h4>
+<b>toggle_view</b>(<i></i>)
+<p>
+        emit signal toggle view source code/html
+</p></p>
+<div align="right"><a href="#top">Up</a></div>
+<hr />
+</body></html>

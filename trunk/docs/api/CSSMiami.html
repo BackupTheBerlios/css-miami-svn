@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html><head>
+<title>CSSMiami</title>
+<style>
+body {
+    background:white;
+    margin: 0em 1em 10em 1em;
+    color: black;
+}
+
+h1 { color: white; background: #4FA4FF; }
+h2 { color: white; background: #4FA4FF; }
+h3 { color: white; background: #00557F; }
+h4 { color: white; background: #00557F; }
+    
+a { color: #AA5500; }
+
+</style>
+</head>
+<body><a NAME="top" ID="top"></a>
+<h1>CSSMiami</h1>
+
+<h3>Classes</h3>
+<table>
+<tr>
+<td><a href="#CSSMiami">CSSMiami</a></td>
+<td>main class program CSS Miami, Web Generator with CSS technology</td>
+</tr>
+</table>
+<h3>Functions</h3>
+<table>
+<tr><td>None</td></tr>
+</table>
+<hr /><hr />
+<a NAME="CSSMiami" ID="CSSMiami"></a>
+<h2>CSSMiami</h2>
+<p>
+    main class program CSS Miami, Web Generator with CSS technology
+</p>
+<h3>Derived from</h3>
+QMainWindow
+<h3>Methods</h3>
+<table>
+<tr>
+<td><a href="#CSSMiami.__init__">CSSMiami</a></td>
+<td></td>
+</tr><tr>
+<td><a href="#CSSMiami.abre_navegador">abre_navegador</a></td>
+<td>open dialog to select browser for display saved web</td>
+</tr><tr>
+<td><a href="#CSSMiami.abre_web">abre_web</a></td>
+<td>open dialog for select saved web or create new web<br> @param first on start program first=True, else first=False</td>
+</tr><tr>
+<td><a href="#CSSMiami.afageix_div">afageix_div</a></td>
+<td>append new div (textEdit) for work with it, and appends new divs with default values in inicializa_div</td>
+</tr><tr>
+<td><a href="#CSSMiami.afageix_div_leido">afageix_div_leido</a></td>
+<td>append div in read html saved<br> @param conta number of div read</td>
+</tr><tr>
+<td><a href="#CSSMiami.borra_div">borra_div</a></td>
+<td>delete selected div</td>
+</tr><tr>
+<td><a href="#CSSMiami.busca_imatge">busca_imatge</a></td>
+<td>get file image for background image and copy file in image directory</td>
+</tr><tr>
+<td><a href="#CSSMiami.busca_linea">busca_linea</a></td>
+<td>routine for search which line contents texte in list lineas<br> @param lineas,texte,texte2 list of lines, text1, text2<br> @return lin,posicio line number, pos in line</td>
+</tr><tr>
+<td><a href="#CSSMiami.canvia_nom_div">canvia_nom_div</a></td>
+<td>assign a new name (rename) to selected div</td>
+</tr><tr>
+<td><a href="#CSSMiami.changeLanguage">changeLanguage</a></td>
+<td>Open Change language Dialog</td>
+</tr><tr>
+<td><a href="#CSSMiami.closeEvent">closeEvent</a></td>
+<td>show warning and exit program</td>
+</tr><tr>
+<td><a href="#CSSMiami.dragEnterEvent">dragEnterEvent</a></td>
+<td>allow drag and drop actions</td>
+</tr><tr>
+<td><a href="#CSSMiami.dragMoveEvent">dragMoveEvent</a></td>
+<td>allow drag and drop actions</td>
+</tr><tr>
+<td><a href="#CSSMiami.edit_content">edit_content</a></td>
+<td>open dialog for edit content div</td>
+</tr><tr>
+<td><a href="#CSSMiami.edit_content_return">edit_content_return</a></td>
+<td>assing return value for dialog edit content div<br> @param var text content for div</td>
+</tr><tr>
+<td><a href="#CSSMiami.func_divclicked">func_divclicked</a></td>
+<td>select div with mouse click<br> @param obj,pos  number div and qpoint position div</td>
+</tr><tr>
+<td><a href="#CSSMiami.grava_divs">grava_divs</a></td>
+<td>save divs in html body</td>
+</tr><tr>
+<td><a href="#CSSMiami.grava_divs_css">grava_divs_css</a></td>
+<td>save values css for div in css template</td>
+</tr><tr>
+<td><a href="#CSSMiami.guarda_css">guarda_css</a></td>
+<td>save file css</td>
+</tr><tr>
+<td><a href="#CSSMiami.guarda_web">guarda_web</a></td>
+<td>save file html and calls function save css</td>
+</tr><tr>
+<td><a href="#CSSMiami.inicia_web">inicia_web</a></td>
+<td>prepare for create new web or open saved web<br> @param tipus,nomfitxer,titol,directori,nomhtml,nomcss2 = new or read html,html file name for read,title of web,html name file for new,css name file for new web</td>
+</tr><tr>
+<td><a href="#CSSMiami.inicializa_div">inicializa_div</a></td>
+<td>set default values to div<br> @param num number div to set name</td>
+</tr><tr>
+<td><a href="#CSSMiami.inicializa_div_leido">inicializa_div_leido</a></td>
+<td>set values to div in read html saved<br> @param conta number of div read</td>
+</tr><tr>
+<td><a href="#CSSMiami.iniciar">iniciar</a></td>
+<td>inicialize vars, create first div container, set default values and prepare options panel</td>
+</tr><tr>
+<td><a href="#CSSMiami.keyPressEvent">keyPressEvent</a></td>
+<td>define shorcuts keys</td>
+</tr><tr>
+<td><a href="#CSSMiami.keyReleaseEvent">keyReleaseEvent</a></td>
+<td></td>
+</tr><tr>
+<td><a href="#CSSMiami.llegeix_web">llegeix_web</a></td>
+<td>read saved web and create divs and assign values readed for css<br> @param nomfitxer file name to read</td>
+</tr><tr>
+<td><a href="#CSSMiami.mostra_about">mostra_about</a></td>
+<td>show dialog about</td>
+</tr><tr>
+<td><a href="#CSSMiami.mostra_help">mostra_help</a></td>
+<td>Search for a valid PDF viewer, and start it Has support to Linux & Windows</td>
+</tr><tr>
+<td><a href="#CSSMiami.nocolor">nocolor</a></td>
+<td>set yes / no bg color property</td>
+</tr><tr>
+<td><a href="#CSSMiami.noheight">noheight</a></td>
+<td>if checkbox_2 not checked height not desired, assign value to var divs</td>
+</tr><tr>
+<td><a href="#CSSMiami.noimatge">noimatge</a></td>
+<td>set yes / no background image property</td>
+</tr><tr>
+<td><a href="#CSSMiami.nowidth">nowidth</a></td>
+<td>if check box not checked width not desired, assign value to var divs</td>
+</tr><tr>
+<td><a href="#CSSMiami.numdiv">numdiv</a></td>
+<td>get number div selected</td>
+</tr><tr>
+<td><a href="#CSSMiami.posa_alinea_text">posa_alinea_text</a></td>
+<td>assign value text align to var divs</td>
+</tr><tr>
+<td><a href="#CSSMiami.posa_capa">posa_capa</a></td>
+<td>assign value z-index (layer) to var divs</td>
+</tr><tr>
+<td><a href="#CSSMiami.posa_color_fons">posa_color_fons</a></td>
+<td>sets bg color to selected div (textEdit)</td>
+</tr><tr>
+<td><a href="#CSSMiami.posa_color_text">posa_color_text</a></td>
+<td>assign value text color to var divs</td>
+</tr><tr>
+<td><a href="#CSSMiami.posa_color_vora">posa_color_vora</a></td>
+<td>sets border color to selected div (textEdit)</td>
+</tr><tr>
+<td><a href="#CSSMiami.posa_div">posa_div</a></td>
+<td>move and resize selected div with values in properties panel</td>
+</tr><tr>
+<td><a href="#CSSMiami.posa_estilo_text">posa_estilo_text</a></td>
+<td>assign value font style to var divs</td>
+</tr><tr>
+<td><a href="#CSSMiami.posa_familia_text">posa_familia_text</a></td>
+<td>assign value font family to var divs</td>
+</tr><tr>
+<td><a href="#CSSMiami.posa_gruix">posa_gruix</a></td>
+<td>assign border width to div (textEdit) and var divs</td>
+</tr><tr>
+<td><a href="#CSSMiami.posa_meta_tags">posa_meta_tags</a></td>
+<td>sets meta tags to header edit text: autor, title, keywords, description, css ...</td>
+</tr><tr>
+<td><a href="#CSSMiami.posa_opacitat">posa_opacitat</a></td>
+<td>assign value transparency to var divs</td>
+</tr><tr>
+<td><a href="#CSSMiami.posa_overflow">posa_overflow</a></td>
+<td>assign value overflow to var divs</td>
+</tr><tr>
+<td><a href="#CSSMiami.posa_padding">posa_padding</a></td>
+<td>assing value padding to var divs</td>
+</tr><tr>
+<td><a href="#CSSMiami.posa_posicio">posa_posicio</a></td>
+<td>assign position (absolute or relative) to var divs</td>
+</tr><tr>
+<td><a href="#CSSMiami.posa_size_text">posa_size_text</a></td>
+<td>assign value font size to var divs</td>
+</tr><tr>
+<td><a href="#CSSMiami.posa_tipo_vora">posa_tipo_vora</a></td>
+<td>assig value border type to var divs</td>
+</tr><tr>
+<td><a href="#CSSMiami.posa_unitats_padding">posa_unitats_padding</a></td>
+<td>assign value padding units to var divs</td>
+</tr><tr>
+<td><a href="#CSSMiami.posa_url">posa_url</a></td>
+<td>set url image in var divs</td>
+</tr><tr>
+<td><a href="#CSSMiami.posa_valign">posa_valign</a></td>
+<td>assign vertical align to var divs</td>
+</tr><tr>
+<td><a href="#CSSMiami.posa_visible">posa_visible</a></td>
+<td>assign value visible to var divs</td>
+</tr><tr>
+<td><a href="#CSSMiami.posa_weight_text">posa_weight_text</a></td>
+<td>assign value font height to var divs</td>
+</tr><tr>
+<td><a href="#CSSMiami.posicio_div">posicio_div</a></td>
+<td>get position selected div @return top,left,width,height values of selected div</td>
+</tr><tr>
+<td><a href="#CSSMiami.receive_changeLanguage">receive_changeLanguage</a></td>
+<td>Receive language and call real function to change language<br> @param language desired language for work actually</td>
+</tr><tr>
+<td><a href="#CSSMiami.repeat">repeat</a></td>
+<td>assign value repeat image to var divs</td>
+</tr><tr>
+<td><a href="#CSSMiami.selecciona_div">selecciona_div</a></td>
+<td>asign and set values in panel properties from selected div</td>
+</tr><tr>
+<td><a href="#CSSMiami.toggle_source">toggle_source</a></td>
+<td>toggle view     html renderized / source code</td>
+</tr><tr>
+<td><a href="#CSSMiami.toggle_source_from_context">toggle_source_from_context</a></td>
+<td>Function to change Source/HTML icon status.</td>
+</tr><tr>
+<td><a href="#CSSMiami.translateForm">translateForm</a></td>
+<td>Function to change language dynamically Remove UI combobox selection (translator fails and duplies entries)</td>
+</tr><tr>
+<td><a href="#CSSMiami.validar_asci">validar_asci</a></td>
+<td>return True if text contains only ascii chars<br> @param nom new div name</td>
+</tr>
+</table>
+<p><a NAME="CSSMiami.__init__" ID="CSSMiami.__init__"></a>
+<h4>CSSMiami (Constructor)</h4>
+<b>CSSMiami</b>(<i></i>)
+<a NAME="CSSMiami.abre_navegador" ID="CSSMiami.abre_navegador"></a>
+<h4>CSSMiami.abre_navegador</h4>
+<b>abre_navegador</b>(<i></i>)
+<p>
+        open dialog to select browser for display saved web
+</p><a NAME="CSSMiami.abre_web" ID="CSSMiami.abre_web"></a>
+<h4>CSSMiami.abre_web</h4>
+<b>abre_web</b>(<i>first=None</i>)
+<p>
+        open dialog for select saved web or create new web<br>
+</p><dl>
+<dt><i>first</i></dt>
+<dd>
+on start program first=True, else first=False
+</dd>
+</dl><a NAME="CSSMiami.afageix_div" ID="CSSMiami.afageix_div"></a>
+<h4>CSSMiami.afageix_div</h4>
+<b>afageix_div</b>(<i></i>)
+<p>
+        append new div (textEdit) for work with it, and appends new divs with default values in inicializa_div
+</p><a NAME="CSSMiami.afageix_div_leido" ID="CSSMiami.afageix_div_leido"></a>
+<h4>CSSMiami.afageix_div_leido</h4>
+<b>afageix_div_leido</b>(<i>conta</i>)
+<p>
+        append div in read html saved<br>
+</p><dl>
+<dt><i>conta</i></dt>
+<dd>
+number of div read
+</dd>
+</dl><a NAME="CSSMiami.borra_div" ID="CSSMiami.borra_div"></a>
+<h4>CSSMiami.borra_div</h4>
+<b>borra_div</b>(<i></i>)
+<p>
+        delete selected div
+</p><a NAME="CSSMiami.busca_imatge" ID="CSSMiami.busca_imatge"></a>
+<h4>CSSMiami.busca_imatge</h4>
+<b>busca_imatge</b>(<i></i>)
+<p>
+        get file image for background image and copy file in image directory
+</p><a NAME="CSSMiami.busca_linea" ID="CSSMiami.busca_linea"></a>
+<h4>CSSMiami.busca_linea</h4>
+<b>busca_linea</b>(<i>lineas, texte, texte2</i>)
+<p>
+        routine for search which line contents texte in list lineas<br>
+</p><dl>
+<dt><i>lineas,texte,texte2</i></dt>
+<dd>
+list of lines, text1, text2<br>
+</dd>
+</dl><dl>
+<dt>Returns:</dt>
+<dd>
+lin,posicio line number, pos in line
+</dd>
+</dl><a NAME="CSSMiami.canvia_nom_div" ID="CSSMiami.canvia_nom_div"></a>
+<h4>CSSMiami.canvia_nom_div</h4>
+<b>canvia_nom_div</b>(<i></i>)
+<p>
+        assign a new name (rename) to selected div
+</p><a NAME="CSSMiami.changeLanguage" ID="CSSMiami.changeLanguage"></a>
+<h4>CSSMiami.changeLanguage</h4>
+<b>changeLanguage</b>(<i></i>)
+<p>
+        Open Change language Dialog
+</p><a NAME="CSSMiami.closeEvent" ID="CSSMiami.closeEvent"></a>
+<h4>CSSMiami.closeEvent</h4>
+<b>closeEvent</b>(<i>event</i>)
+<p>
+        show warning and exit program
+</p><a NAME="CSSMiami.dragEnterEvent" ID="CSSMiami.dragEnterEvent"></a>
+<h4>CSSMiami.dragEnterEvent</h4>
+<b>dragEnterEvent</b>(<i>event</i>)
+<p>
+        allow drag and drop actions
+</p><a NAME="CSSMiami.dragMoveEvent" ID="CSSMiami.dragMoveEvent"></a>
+<h4>CSSMiami.dragMoveEvent</h4>
+<b>dragMoveEvent</b>(<i>event</i>)
+<p>
+        allow drag and drop actions
+</p><a NAME="CSSMiami.edit_content" ID="CSSMiami.edit_content"></a>
+<h4>CSSMiami.edit_content</h4>
+<b>edit_content</b>(<i></i>)
+<p>
+        open dialog for edit content div
+</p><a NAME="CSSMiami.edit_content_return" ID="CSSMiami.edit_content_return"></a>
+<h4>CSSMiami.edit_content_return</h4>
+<b>edit_content_return</b>(<i>var</i>)
+<p>
+        assing return value for dialog edit content div<br>
+</p><dl>
+<dt><i>var</i></dt>
+<dd>
+text content for div
+</dd>
+</dl><a NAME="CSSMiami.func_divclicked" ID="CSSMiami.func_divclicked"></a>
+<h4>CSSMiami.func_divclicked</h4>
+<b>func_divclicked</b>(<i>obj, pos</i>)
+<p>
+        select div with mouse click<br>
+</p><dl>
+<dt><i>obj,pos</i></dt>
+<dd>
+number div and qpoint position div
+</dd>
+</dl><a NAME="CSSMiami.grava_divs" ID="CSSMiami.grava_divs"></a>
+<h4>CSSMiami.grava_divs</h4>
+<b>grava_divs</b>(<i></i>)
+<p>
+        save divs in html body
+</p><a NAME="CSSMiami.grava_divs_css" ID="CSSMiami.grava_divs_css"></a>
+<h4>CSSMiami.grava_divs_css</h4>
+<b>grava_divs_css</b>(<i></i>)
+<p>
+        save values css for div in css template
+</p><a NAME="CSSMiami.guarda_css" ID="CSSMiami.guarda_css"></a>
+<h4>CSSMiami.guarda_css</h4>
+<b>guarda_css</b>(<i></i>)
+<p>
+        save file css
+</p><a NAME="CSSMiami.guarda_web" ID="CSSMiami.guarda_web"></a>
+<h4>CSSMiami.guarda_web</h4>
+<b>guarda_web</b>(<i></i>)
+<p>
+        save file html and calls function save css
+</p><a NAME="CSSMiami.inicia_web" ID="CSSMiami.inicia_web"></a>
+<h4>CSSMiami.inicia_web</h4>
+<b>inicia_web</b>(<i>tipus, nomfitxer, titol=None, directori=None, nomhtml2=None, nomcss2=None</i>)
+<p>
+        prepare for create new web or open saved web<br>
+</p><dl>
+<dt><i>tipus,nomfitxer,titol,directori,nomhtml,nomcss2</i></dt>
+<dd>
+= new or read html,html file name for read,title of web,html name file for new,css name file for new web
+</dd>
+</dl><a NAME="CSSMiami.inicializa_div" ID="CSSMiami.inicializa_div"></a>
+<h4>CSSMiami.inicializa_div</h4>
+<b>inicializa_div</b>(<i>num</i>)
+<p>
+        set default values to div<br>
+</p><dl>
+<dt><i>num</i></dt>
+<dd>
+number div to set name
+</dd>
+</dl><a NAME="CSSMiami.inicializa_div_leido" ID="CSSMiami.inicializa_div_leido"></a>
+<h4>CSSMiami.inicializa_div_leido</h4>
+<b>inicializa_div_leido</b>(<i>conta</i>)
+<p>
+        set values to div in read html saved<br>
+</p><dl>
+<dt><i>conta</i></dt>
+<dd>
+number of div read
+</dd>
+</dl><a NAME="CSSMiami.iniciar" ID="CSSMiami.iniciar"></a>
+<h4>CSSMiami.iniciar</h4>
+<b>iniciar</b>(<i></i>)
+<p>
+        inicialize vars, create first div container, set default values and prepare options panel
+</p><a NAME="CSSMiami.keyPressEvent" ID="CSSMiami.keyPressEvent"></a>
+<h4>CSSMiami.keyPressEvent</h4>
+<b>keyPressEvent</b>(<i>event</i>)
+<p>
+        define shorcuts keys
+</p><a NAME="CSSMiami.keyReleaseEvent" ID="CSSMiami.keyReleaseEvent"></a>
+<h4>CSSMiami.keyReleaseEvent</h4>
+<b>keyReleaseEvent</b>(<i>event</i>)
+<a NAME="CSSMiami.llegeix_web" ID="CSSMiami.llegeix_web"></a>
+<h4>CSSMiami.llegeix_web</h4>
+<b>llegeix_web</b>(<i>nomfitxer</i>)
+<p>
+        read saved web and create divs and assign values readed for css<br>
+</p><dl>
+<dt><i>nomfitxer</i></dt>
+<dd>
+file name to read
+</dd>
+</dl><a NAME="CSSMiami.mostra_about" ID="CSSMiami.mostra_about"></a>
+<h4>CSSMiami.mostra_about</h4>
+<b>mostra_about</b>(<i></i>)
+<p>
+        show dialog about
+</p><a NAME="CSSMiami.mostra_help" ID="CSSMiami.mostra_help"></a>
+<h4>CSSMiami.mostra_help</h4>
+<b>mostra_help</b>(<i></i>)
+<p>
+	Search for a valid PDF viewer, and start it
+	Has support to Linux & Windows
+</p><a NAME="CSSMiami.nocolor" ID="CSSMiami.nocolor"></a>
+<h4>CSSMiami.nocolor</h4>
+<b>nocolor</b>(<i></i>)
+<p>
+        set yes / no bg color property
+</p><a NAME="CSSMiami.noheight" ID="CSSMiami.noheight"></a>
+<h4>CSSMiami.noheight</h4>
+<b>noheight</b>(<i></i>)
+<p>
+        if checkbox_2 not checked height not desired, assign value to var divs
+</p><a NAME="CSSMiami.noimatge" ID="CSSMiami.noimatge"></a>
+<h4>CSSMiami.noimatge</h4>
+<b>noimatge</b>(<i></i>)
+<p>
+        set yes / no background image property
+</p><a NAME="CSSMiami.nowidth" ID="CSSMiami.nowidth"></a>
+<h4>CSSMiami.nowidth</h4>
+<b>nowidth</b>(<i></i>)
+<p>
+        if check box not checked width not desired, assign value to var divs
+</p><a NAME="CSSMiami.numdiv" ID="CSSMiami.numdiv"></a>
+<h4>CSSMiami.numdiv</h4>
+<b>numdiv</b>(<i></i>)
+<p>
+        get number div selected
+</p><a NAME="CSSMiami.posa_alinea_text" ID="CSSMiami.posa_alinea_text"></a>
+<h4>CSSMiami.posa_alinea_text</h4>
+<b>posa_alinea_text</b>(<i></i>)
+<p>
+        assign value text align to var divs
+</p><a NAME="CSSMiami.posa_capa" ID="CSSMiami.posa_capa"></a>
+<h4>CSSMiami.posa_capa</h4>
+<b>posa_capa</b>(<i></i>)
+<p>
+        assign value z-index (layer) to var divs
+</p><a NAME="CSSMiami.posa_color_fons" ID="CSSMiami.posa_color_fons"></a>
+<h4>CSSMiami.posa_color_fons</h4>
+<b>posa_color_fons</b>(<i></i>)
+<p>
+        sets bg color to selected div (textEdit)
+</p><a NAME="CSSMiami.posa_color_text" ID="CSSMiami.posa_color_text"></a>
+<h4>CSSMiami.posa_color_text</h4>
+<b>posa_color_text</b>(<i></i>)
+<p>
+        assign value text color to var divs
+</p><a NAME="CSSMiami.posa_color_vora" ID="CSSMiami.posa_color_vora"></a>
+<h4>CSSMiami.posa_color_vora</h4>
+<b>posa_color_vora</b>(<i></i>)
+<p>
+        sets border color to selected div (textEdit)
+</p><a NAME="CSSMiami.posa_div" ID="CSSMiami.posa_div"></a>
+<h4>CSSMiami.posa_div</h4>
+<b>posa_div</b>(<i></i>)
+<p>
+        move and resize selected div with values in properties panel
+</p><a NAME="CSSMiami.posa_estilo_text" ID="CSSMiami.posa_estilo_text"></a>
+<h4>CSSMiami.posa_estilo_text</h4>
+<b>posa_estilo_text</b>(<i></i>)
+<p>
+        assign value font style to var divs
+</p><a NAME="CSSMiami.posa_familia_text" ID="CSSMiami.posa_familia_text"></a>
+<h4>CSSMiami.posa_familia_text</h4>
+<b>posa_familia_text</b>(<i></i>)
+<p>
+        assign value font family to var divs
+</p><a NAME="CSSMiami.posa_gruix" ID="CSSMiami.posa_gruix"></a>
+<h4>CSSMiami.posa_gruix</h4>
+<b>posa_gruix</b>(<i></i>)
+<p>
+        assign border width to div (textEdit) and var divs
+</p><a NAME="CSSMiami.posa_meta_tags" ID="CSSMiami.posa_meta_tags"></a>
+<h4>CSSMiami.posa_meta_tags</h4>
+<b>posa_meta_tags</b>(<i></i>)
+<p>
+        sets meta tags to header edit text: autor, title, keywords, description, css ...
+</p><a NAME="CSSMiami.posa_opacitat" ID="CSSMiami.posa_opacitat"></a>
+<h4>CSSMiami.posa_opacitat</h4>
+<b>posa_opacitat</b>(<i></i>)
+<p>
+        assign value transparency to var divs
+</p><a NAME="CSSMiami.posa_overflow" ID="CSSMiami.posa_overflow"></a>
+<h4>CSSMiami.posa_overflow</h4>
+<b>posa_overflow</b>(<i></i>)
+<p>
+        assign value overflow to var divs
+</p><a NAME="CSSMiami.posa_padding" ID="CSSMiami.posa_padding"></a>
+<h4>CSSMiami.posa_padding</h4>
+<b>posa_padding</b>(<i></i>)
+<p>
+        assing value padding to var divs
+</p><a NAME="CSSMiami.posa_posicio" ID="CSSMiami.posa_posicio"></a>
+<h4>CSSMiami.posa_posicio</h4>
+<b>posa_posicio</b>(<i></i>)
+<p>
+        assign position (absolute or relative) to var divs
+</p><a NAME="CSSMiami.posa_size_text" ID="CSSMiami.posa_size_text"></a>
+<h4>CSSMiami.posa_size_text</h4>
+<b>posa_size_text</b>(<i></i>)
+<p>
+        assign value font size to var divs
+</p><a NAME="CSSMiami.posa_tipo_vora" ID="CSSMiami.posa_tipo_vora"></a>
+<h4>CSSMiami.posa_tipo_vora</h4>
+<b>posa_tipo_vora</b>(<i></i>)
+<p>
+        assig value border type to var divs
+</p><a NAME="CSSMiami.posa_unitats_padding" ID="CSSMiami.posa_unitats_padding"></a>
+<h4>CSSMiami.posa_unitats_padding</h4>
+<b>posa_unitats_padding</b>(<i></i>)
+<p>
+        assign value padding units to var divs
+</p><a NAME="CSSMiami.posa_url" ID="CSSMiami.posa_url"></a>
+<h4>CSSMiami.posa_url</h4>
+<b>posa_url</b>(<i></i>)
+<p>
+        set url image in var divs
+</p><a NAME="CSSMiami.posa_valign" ID="CSSMiami.posa_valign"></a>
+<h4>CSSMiami.posa_valign</h4>
+<b>posa_valign</b>(<i></i>)
+<p>
+        assign vertical align to var divs
+</p><a NAME="CSSMiami.posa_visible" ID="CSSMiami.posa_visible"></a>
+<h4>CSSMiami.posa_visible</h4>
+<b>posa_visible</b>(<i></i>)
+<p>
+        assign value visible to var divs
+</p><a NAME="CSSMiami.posa_weight_text" ID="CSSMiami.posa_weight_text"></a>
+<h4>CSSMiami.posa_weight_text</h4>
+<b>posa_weight_text</b>(<i></i>)
+<p>
+        assign value font height to var divs
+</p><a NAME="CSSMiami.posicio_div" ID="CSSMiami.posicio_div"></a>
+<h4>CSSMiami.posicio_div</h4>
+<b>posicio_div</b>(<i></i>)
+<p>
+        get position selected div
+</p><dl>
+<dt>Returns:</dt>
+<dd>
+top,left,width,height values of selected div
+</dd>
+</dl><a NAME="CSSMiami.receive_changeLanguage" ID="CSSMiami.receive_changeLanguage"></a>
+<h4>CSSMiami.receive_changeLanguage</h4>
+<b>receive_changeLanguage</b>(<i>language</i>)
+<p>
+        Receive language and call real function to change language<br>
+</p><dl>
+<dt><i>language</i></dt>
+<dd>
+desired language for work actually
+</dd>
+</dl><a NAME="CSSMiami.repeat" ID="CSSMiami.repeat"></a>
+<h4>CSSMiami.repeat</h4>
+<b>repeat</b>(<i></i>)
+<p>
+        assign value repeat image to var divs
+</p><a NAME="CSSMiami.selecciona_div" ID="CSSMiami.selecciona_div"></a>
+<h4>CSSMiami.selecciona_div</h4>
+<b>selecciona_div</b>(<i></i>)
+<p>
+        asign and set values in panel properties from selected div
+</p><a NAME="CSSMiami.toggle_source" ID="CSSMiami.toggle_source"></a>
+<h4>CSSMiami.toggle_source</h4>
+<b>toggle_source</b>(<i></i>)
+<p>
+        toggle view     html renderized / source code
+</p><a NAME="CSSMiami.toggle_source_from_context" ID="CSSMiami.toggle_source_from_context"></a>
+<h4>CSSMiami.toggle_source_from_context</h4>
+<b>toggle_source_from_context</b>(<i></i>)
+<p>
+        Function to change Source/HTML icon status.
+        Then calls the real change Source/HTML view on workspace
+        it's called when DivContainer class emit "toggle_view_div" Signal
+</p><a NAME="CSSMiami.translateForm" ID="CSSMiami.translateForm"></a>
+<h4>CSSMiami.translateForm</h4>
+<b>translateForm</b>(<i></i>)
+<p>
+        Function to change language dynamically
+        Remove UI combobox selection (translator fails and duplies entries)
+</p><a NAME="CSSMiami.validar_asci" ID="CSSMiami.validar_asci"></a>
+<h4>CSSMiami.validar_asci</h4>
+<b>validar_asci</b>(<i>nom</i>)
+<p>
+        return True if text contains only ascii chars<br>
+</p><dl>
+<dt><i>nom</i></dt>
+<dd>
+new div name
+</dd>
+</dl></p>
+<div align="right"><a href="#top">Up</a></div>
+<hr />
+</body></html>

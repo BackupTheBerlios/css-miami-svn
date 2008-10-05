@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html><head>
+<title>editor</title>
+<style>
+body {
+    background:white;
+    margin: 0em 1em 10em 1em;
+    color: black;
+}
+
+h1 { color: white; background: #4FA4FF; }
+h2 { color: white; background: #4FA4FF; }
+h3 { color: white; background: #00557F; }
+h4 { color: white; background: #00557F; }
+    
+a { color: #AA5500; }
+
+</style>
+</head>
+<body><a NAME="top" ID="top"></a>
+<h1>editor</h1>
+
+<h3>Classes</h3>
+<table>
+<tr>
+<td><a href="#editor">editor</a></td>
+<td>class of editor div content and set properties of text, images, tables, links...</td>
+</tr>
+</table>
+<h3>Functions</h3>
+<table>
+<tr><td>None</td></tr>
+</table>
+<hr /><hr />
+<a NAME="editor" ID="editor"></a>
+<h2>editor</h2>
+<p>
+    class of editor div content and set properties of text, images, tables, links...
+</p><h4>Signals</h4>
+<dl>
+<dt>ok</dt>
+<dd>
+returns_text_in_html_format (str)
+</dd>
+</dl>
+<h3>Derived from</h3>
+QDialog
+<h3>Methods</h3>
+<table>
+<tr>
+<td><a href="#editor.__init__">editor</a></td>
+<td></td>
+</tr><tr>
+<td><a href="#editor.accept">accept</a></td>
+<td>emit values and close dialog</td>
+</tr><tr>
+<td><a href="#editor.bold">bold</a></td>
+<td>sets selected text bold</td>
+</tr><tr>
+<td><a href="#editor.center">center</a></td>
+<td>sets selected text align center</td>
+</tr><tr>
+<td><a href="#editor.color">color</a></td>
+<td>open dialog color and sets selected text font color</td>
+</tr><tr>
+<td><a href="#editor.fill">fill</a></td>
+<td>sets selected text align justify</td>
+</tr><tr>
+<td><a href="#editor.hr">hr</a></td>
+<td>put line (hr)</td>
+</tr><tr>
+<td><a href="#editor.image">image</a></td>
+<td>open file dialog to select image</td>
+</tr><tr>
+<td><a href="#editor.inserthtml">inserthtml</a></td>
+<td>copy image file in image directori and set html code in editor<br> @param html,filename text code html, image filename</td>
+</tr><tr>
+<td><a href="#editor.insertlink">insertlink</a></td>
+<td>Real function to insert link<br> If not has HTTP:// header, put it<br> @param linkcode,text html code for link, text for link</td>
+</tr><tr>
+<td><a href="#editor.inserttable">inserttable</a></td>
+<td>Real function to insert table<br> @param tablecode (str)  html text for table</td>
+</tr><tr>
+<td><a href="#editor.italic">italic</a></td>
+<td>sets selected text italic</td>
+</tr><tr>
+<td><a href="#editor.keyPressEvent">keyPressEvent</a></td>
+<td>handle key events</td>
+</tr><tr>
+<td><a href="#editor.left">left</a></td>
+<td>sets selected text align left</td>
+</tr><tr>
+<td><a href="#editor.nueva_linea">nueva_linea</a></td>
+<td>put line break (br)</td>
+</tr><tr>
+<td><a href="#editor.put_content">put_content</a></td>
+<td>sets text edit content<br> @param text,div,directori text to insert in div, object div, html directori</td>
+</tr><tr>
+<td><a href="#editor.put_link">put_link</a></td>
+<td>Show  create link dialog</td>
+</tr><tr>
+<td><a href="#editor.put_table">put_table</a></td>
+<td>Function to show table dialog</td>
+</tr><tr>
+<td><a href="#editor.right">right</a></td>
+<td>sets selected text align right</td>
+</tr><tr>
+<td><a href="#editor.size">size</a></td>
+<td>sets selected text size</td>
+</tr><tr>
+<td><a href="#editor.source">source</a></td>
+<td>toggle view source html or plain text</td>
+</tr><tr>
+<td><a href="#editor.translate_entities">translate_entities</a></td>
+<td>Function to translate text to real ascii (to be compatible all browsers)<br> &#225;  -> & #225 ; (example)<br> @param texte (str) text to translate<br> @return textfinal (str) translated text</td>
+</tr><tr>
+<td><a href="#editor.trogglewidgets">trogglewidgets</a></td>
+<td>enable or disable all buttons<br> @param var true or false for enable/disable buttons</td>
+</tr><tr>
+<td><a href="#editor.underline">underline</a></td>
+<td>sets selected text underlined</td>
+</tr>
+</table>
+<p><a NAME="editor.__init__" ID="editor.__init__"></a>
+<h4>editor (Constructor)</h4>
+<b>editor</b>(<i></i>)
+<a NAME="editor.accept" ID="editor.accept"></a>
+<h4>editor.accept</h4>
+<b>accept</b>(<i></i>)
+<p>
+        emit values and close dialog
+</p><a NAME="editor.bold" ID="editor.bold"></a>
+<h4>editor.bold</h4>
+<b>bold</b>(<i></i>)
+<p>
+        sets selected text bold
+</p><a NAME="editor.center" ID="editor.center"></a>
+<h4>editor.center</h4>
+<b>center</b>(<i></i>)
+<p>
+        sets selected text align center
+</p><a NAME="editor.color" ID="editor.color"></a>
+<h4>editor.color</h4>
+<b>color</b>(<i></i>)
+<p>
+        open dialog color and sets selected text font color
+</p><a NAME="editor.fill" ID="editor.fill"></a>
+<h4>editor.fill</h4>
+<b>fill</b>(<i></i>)
+<p>
+        sets selected text align justify
+</p><a NAME="editor.hr" ID="editor.hr"></a>
+<h4>editor.hr</h4>
+<b>hr</b>(<i></i>)
+<p>
+        put line (hr)
+</p><a NAME="editor.image" ID="editor.image"></a>
+<h4>editor.image</h4>
+<b>image</b>(<i></i>)
+<p>
+        open file dialog to select image
+</p><a NAME="editor.inserthtml" ID="editor.inserthtml"></a>
+<h4>editor.inserthtml</h4>
+<b>inserthtml</b>(<i>html, fileName</i>)
+<p>
+        copy image file in image directori and set html code in editor<br>
+</p><dl>
+<dt><i>html,filename</i></dt>
+<dd>
+text code html, image filename
+</dd>
+</dl><a NAME="editor.insertlink" ID="editor.insertlink"></a>
+<h4>editor.insertlink</h4>
+<b>insertlink</b>(<i>linkcode, text</i>)
+<p>
+        Real function to insert link<br>
+        If not has HTTP:// header, put it<br>
+</p><dl>
+<dt><i>linkcode,text</i></dt>
+<dd>
+html code for link, text for link
+</dd>
+</dl><a NAME="editor.inserttable" ID="editor.inserttable"></a>
+<h4>editor.inserttable</h4>
+<b>inserttable</b>(<i>tablecode</i>)
+<p>
+        Real function to insert table<br>
+</p><dl>
+<dt><i>tablecode</i></dt>
+<dd>
+(str)  html text for table
+</dd>
+</dl><a NAME="editor.italic" ID="editor.italic"></a>
+<h4>editor.italic</h4>
+<b>italic</b>(<i></i>)
+<p>
+        sets selected text italic
+</p><a NAME="editor.keyPressEvent" ID="editor.keyPressEvent"></a>
+<h4>editor.keyPressEvent</h4>
+<b>keyPressEvent</b>(<i>event</i>)
+<p>
+        handle key events
+</p><a NAME="editor.left" ID="editor.left"></a>
+<h4>editor.left</h4>
+<b>left</b>(<i></i>)
+<p>
+        sets selected text align left
+</p><a NAME="editor.nueva_linea" ID="editor.nueva_linea"></a>
+<h4>editor.nueva_linea</h4>
+<b>nueva_linea</b>(<i></i>)
+<p>
+        put line break (br)
+</p><a NAME="editor.put_content" ID="editor.put_content"></a>
+<h4>editor.put_content</h4>
+<b>put_content</b>(<i>texto, div, directori</i>)
+<p>
+        sets text edit content<br>
+</p><dl>
+<dt><i>text,div,directori</i></dt>
+<dd>
+text to insert in div, object div, html directori
+</dd>
+</dl><a NAME="editor.put_link" ID="editor.put_link"></a>
+<h4>editor.put_link</h4>
+<b>put_link</b>(<i></i>)
+<p>
+        Show  create link dialog
+</p><a NAME="editor.put_table" ID="editor.put_table"></a>
+<h4>editor.put_table</h4>
+<b>put_table</b>(<i></i>)
+<p>
+        Function to show table dialog
+</p><a NAME="editor.right" ID="editor.right"></a>
+<h4>editor.right</h4>
+<b>right</b>(<i></i>)
+<p>
+        sets selected text align right
+</p><a NAME="editor.size" ID="editor.size"></a>
+<h4>editor.size</h4>
+<b>size</b>(<i>size</i>)
+<p>
+        sets selected text size
+</p><a NAME="editor.source" ID="editor.source"></a>
+<h4>editor.source</h4>
+<b>source</b>(<i></i>)
+<p>
+        toggle view source html or plain text
+</p><a NAME="editor.translate_entities" ID="editor.translate_entities"></a>
+<h4>editor.translate_entities</h4>
+<b>translate_entities</b>(<i>texte</i>)
+<p>
+        Function to translate text to real ascii (to be compatible all browsers)<br>
+                          &#225;  -> & #225 ; (example)<br>
+</p><dl>
+<dt><i>texte</i></dt>
+<dd>
+(str) text to translate<br>
+</dd>
+</dl><dl>
+<dt>Returns:</dt>
+<dd>
+textfinal (str) translated text
+</dd>
+</dl><a NAME="editor.trogglewidgets" ID="editor.trogglewidgets"></a>
+<h4>editor.trogglewidgets</h4>
+<b>trogglewidgets</b>(<i>var</i>)
+<p>
+        enable or disable all buttons<br>
+</p><dl>
+<dt><i>var</i></dt>
+<dd>
+true or false for enable/disable buttons
+</dd>
+</dl><a NAME="editor.underline" ID="editor.underline"></a>
+<h4>editor.underline</h4>
+<b>underline</b>(<i></i>)
+<p>
+        sets selected text underlined
+</p></p>
+<div align="right"><a href="#top">Up</a></div>
+<hr />
+</body></html>

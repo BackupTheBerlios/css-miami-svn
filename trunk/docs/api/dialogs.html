@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html><head>
+<title>dialogs</title>
+<style>
+body {
+    background:white;
+    margin: 0em 1em 10em 1em;
+    color: black;
+}
+
+h1 { color: white; background: #4FA4FF; }
+h2 { color: white; background: #4FA4FF; }
+h3 { color: white; background: #00557F; }
+h4 { color: white; background: #00557F; }
+    
+a { color: #AA5500; }
+
+</style>
+</head>
+<body><a NAME="top" ID="top"></a>
+<h1>dialogs</h1>
+
+<h3>Classes</h3>
+<table>
+<tr>
+<td><a href="#create_dialogs">create_dialogs</a></td>
+<td>class to define various dialogs in one form @signal load_web 1 (int), file_html_to_open (str) @signal load_web 2 (int), "" (str), page_title (str), web_folder (str), html_filename (str), css_filename (str) @signal linkcode code_in_html_of_link (str) @signal language desired languge (str) [ca, es, en] @signal tablecode code_in_html_of_table (str)</td>
+</tr>
+</table>
+<h3>Functions</h3>
+<table>
+<tr><td>None</td></tr>
+</table>
+<hr /><hr />
+<a NAME="create_dialogs" ID="create_dialogs"></a>
+<h2>create_dialogs</h2>
+<p>
+    class to define various dialogs in one form
+</p><h4>Signals</h4>
+<dl>
+<dt>language</dt>
+<dd>
+desired languge (str) [ca, es, en]
+</dd><dt>linkcode</dt>
+<dd>
+code_in_html_of_link (str)
+</dd><dt>load_web</dt>
+<dd>
+2 (int), "" (str), page_title (str), web_folder (str), html_filename (str), css_filename (str)
+</dd><dt>tablecode</dt>
+<dd>
+code_in_html_of_table (str)
+</dd>
+</dl>
+<h3>Derived from</h3>
+QDialog
+<h3>Methods</h3>
+<table>
+<tr>
+<td><a href="#create_dialogs.__init__">create_dialogs</a></td>
+<td></td>
+</tr><tr>
+<td><a href="#create_dialogs.accept_button">accept_button</a></td>
+<td>accept entries values for dialog selected and send to receiver</td>
+</tr><tr>
+<td><a href="#create_dialogs.closeEvent">closeEvent</a></td>
+<td>prevent close open/create web dialog without file/directori selected</td>
+</tr><tr>
+<td><a href="#create_dialogs.escoge_directorio">escoge_directorio</a></td>
+<td>show dialog to select directori for create a new html file and css template</td>
+</tr><tr>
+<td><a href="#create_dialogs.langcat">langcat</a></td>
+<td>change state butons of language to catalan</td>
+</tr><tr>
+<td><a href="#create_dialogs.langeng">langeng</a></td>
+<td>change state butons of language to english</td>
+</tr><tr>
+<td><a href="#create_dialogs.langesp">langesp</a></td>
+<td>change state butons of language to castilian</td>
+</tr>
+</table>
+<p><a NAME="create_dialogs.__init__" ID="create_dialogs.__init__"></a>
+<h4>create_dialogs (Constructor)</h4>
+<b>create_dialogs</b>(<i>first=None</i>)
+<a NAME="create_dialogs.accept_button" ID="create_dialogs.accept_button"></a>
+<h4>create_dialogs.accept_button</h4>
+<b>accept_button</b>(<i></i>)
+<p>
+        accept entries values for dialog selected and send to receiver
+</p><a NAME="create_dialogs.closeEvent" ID="create_dialogs.closeEvent"></a>
+<h4>create_dialogs.closeEvent</h4>
+<b>closeEvent</b>(<i>event</i>)
+<p>
+        prevent close open/create web dialog without file/directori selected
+</p><a NAME="create_dialogs.escoge_directorio" ID="create_dialogs.escoge_directorio"></a>
+<h4>create_dialogs.escoge_directorio</h4>
+<b>escoge_directorio</b>(<i></i>)
+<p>
+        show dialog to select directori for create a new html file and css template
+</p><a NAME="create_dialogs.langcat" ID="create_dialogs.langcat"></a>
+<h4>create_dialogs.langcat</h4>
+<b>langcat</b>(<i></i>)
+<p>
+        change state butons of language to catalan
+</p><a NAME="create_dialogs.langeng" ID="create_dialogs.langeng"></a>
+<h4>create_dialogs.langeng</h4>
+<b>langeng</b>(<i></i>)
+<p>
+        change state butons of language to english
+</p><a NAME="create_dialogs.langesp" ID="create_dialogs.langesp"></a>
+<h4>create_dialogs.langesp</h4>
+<b>langesp</b>(<i></i>)
+<p>
+        change state butons of language to castilian
+</p></p>
+<div align="right"><a href="#top">Up</a></div>
+<hr />
+</body></html>
